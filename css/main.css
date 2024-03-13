@@ -1,0 +1,100 @@
+:root {
+  font-family: monospace;
+  color: white;
+  background-color: #3a3a3a;
+}
+
+body {
+   color: white;
+}
+
+button {
+  font-family: monospace;
+  cursor: pointer;
+  border: none;
+}
+
+#main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  align-items: space-between;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+#click-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: space-between;
+}
+
+#upgrades-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: space-between;
+}
+
+#settings-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: space-between;
+}
+
+#drones-text {
+  margin: 10px;
+  font-size: 30px;
+}
+
+#dps-text {
+  margin: 10px;
+  font-size: 30px;
+}
+
+#click-button {
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid, black;
+  border-radius: 50px;
+}
+
+#clicks-button:active {
+  width: 60px;
+}
+
+.passive-upgrade {
+  margin: auto;
+  width: 200px;
+  height: auto;
+  border: 2px solid, black;
+  border-radius: 50px;
+}
+
+#save-text {
+  position: absolute;
+  visibility: hidden;
+  color: green;
+  font-size: 15px;
+  font-weight: bold;
+  top: 7px;
+}
+
+#save-button {
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+  border: 2px solid, black;
+  border-radius: 50px;
+}
+
+#reset-button {
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+  border: 2px solid, black;
+  border-radius: 50px;
+}

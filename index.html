@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drone Clicker</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- 
+    The main grid is split in three parts:
+    1. the main button flexbox (right)
+    2. the passive upgrades flexbox (middle)
+    3. the settings flexbox (right)
+   -->
+  <div id="main-grid">
+    <div id="click-flexbox">
+      <div id="drones-text">Drones: 0</div>
+      <div id="dps-text">DPS: 0</div>
+      <button id="click-button">Get Drones</button>
+    </div>
+    <div id="upgrades-flexbox">
+      <button class="passive-upgrade" id="human-worker-button">
+        Human Worker <br> Amount: 1 <br> Cost: 10 Drones
+      </button>
+    </div>
+    <div id="settings-flexbox">
+      <p id="save-text">Progress was saved!</p>
+      <button id="save-button">Save Progress</button>
+      <button id="reset-button">Reset Progress</button>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
