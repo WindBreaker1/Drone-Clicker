@@ -17,12 +17,12 @@ let dps = Math.trunc(JSON.parse(localStorage.getItem("dps")));
 //update text functions
 
 function updateText() {
+  dpsText.innerText = `DPS: ${Math.trunc(dps)}`;
+  
+  humanWorkerButton.innerText = `Human Worker \n Amount: ${humanWorker.amount} \n Cost: ${Math.trunc(humanWorker.cost)} Drones`;
+
   dronesText.innerText = `Drones: ${Math.trunc(drones)}`;
   setInterval(function () {dronesText.innerText = `Drones: ${Math.trunc(drones)}`}, 1000);
-
-  dpsText.innerText = `DPS: ${Math.trunc(dps)}`;
-
-  humanWorkerButton.innerText = `Human Worker \n Amount: ${humanWorker.amount} \n Cost: ${Math.trunc(humanWorker.cost)} Drones`;
 }
 
 //click function
@@ -82,6 +82,13 @@ function saveProgress() {
   setTimeout(function () {saveText.style.visibility = "hidden"}, 3000);
 }
 saveButton.addEventListener("click", saveProgress);
+
+//autosave system
+
+function autoSave() {
+  setInterval(saveProgress, 600000);
+}
+autoSave();
 
 //reset progress
 

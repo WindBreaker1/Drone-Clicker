@@ -12,6 +12,7 @@ button {
   font-family: monospace;
   cursor: pointer;
   border: none;
+  background-color: #b4b4b4;
 }
 
 #main-grid {
@@ -56,10 +57,17 @@ button {
 
 #click-button {
   margin: 10px;
-  width: 75px;
-  height: 75px;
+  padding: 40px;
   border: 2px solid, black;
   border-radius: 50px;
+  background-color: #c10e0e;
+  box-shadow: 0px 9px 2px #4d0000a8;
+}
+
+#click-button:active {
+  height: 20px;
+  transform: translateY(4px);
+  box-shadow: 0px 5px 1px #450000d0;
 }
 
 #clicks-button:active {
@@ -68,10 +76,10 @@ button {
 
 .passive-upgrade {
   margin: auto;
-  width: 200px;
+  width: 220px;
   height: auto;
   border: 2px solid, black;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 #save-text {
@@ -98,3 +106,4 @@ button {
   border: 2px solid, black;
   border-radius: 50px;
 }
+
